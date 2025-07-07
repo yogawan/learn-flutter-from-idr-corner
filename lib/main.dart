@@ -1,5 +1,9 @@
 import 'package:app/screens/app_bar_screen.dart';
+import 'package:app/screens/bottom_nav_bar_screen.dart';
+import 'package:app/screens/card_and_parshing_data_screen.dart';
 import 'package:app/screens/hello_world_screen.dart';
+import 'package:app/screens/image_screen.dart';
+import 'package:app/screens/row_column_screen.dart';
 import 'package:app/screens/style_text_and_icon_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,11 +18,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Reiteration Flutter',
-      initialRoute: '/app_bar',
+      initialRoute: '/image_screen',
       routes: {
         '/hello_world': (context) => const HelloWorldScreen(),
         '/style_text_and_icon': (context) => const StyleTextAndIconScreen(),
         '/app_bar': (context) => const AppBarScreen(),
+        '/row_column': (context) => const RowColumnScreen(),
+        '/card_and_parsing_data': (context) => const CardAndParshingDataScreen(),
+        '/bottom_nav_bar': (context) => const BottomNavBarScreen(),
+        '/image_screen': (context) => const ImageScreen(),
       },
     );
   }
